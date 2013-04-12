@@ -1,0 +1,29 @@
+The Knight Travails
+===
+
+An assignment project completed for a job interview.
+
+Finds the Shortest Path for a Knight piece across a 8x8 Chess Board using the
+A* Search Algorithm for navigating a graph.
+
+### To build:
+
+With the Makefile:
+
+	> make
+
+Without the Makefile:
+
+	mkdir bin
+	javac  src/*.java -sourcepath src/ -d bin/
+	javac  src/chess/*.java -sourcepath src/ -d bin/
+	javac  src/search/*.java -sourcepath src/ -d bin/
+
+### To run:
+
+	java -cp bin/ KnightTravails start goal [-all]
+   
+Usage:
+
+	start, goal  Algebraic coordinate. (Form: [A-Z][0-9]) 
+	-a,-all 	 (Optional) Use BreadthFirstSearch to display all paths
